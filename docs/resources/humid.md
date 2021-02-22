@@ -38,3 +38,30 @@ resource "aws_instance" "server" {
     # ... (other aws_instance arguments) ...
 }
 ```
+
+## Schema
+
+### Optional
+
+- **keepers** (Map of String) Arbitrary map of values that, when changed, will trigger recreation of resource. See [the main provider documentation](../index.html) for more information.
+- **wordlist** (String) Name of the wordlist to use to generate the random ID. See the [humid repo](https://github.com/kscarlett/humid/tree/main/wordlist) for more information on the wordlists available. Defaults to the "animals" list.
+- **adjectives** (Integer) Amount of adjectives to use to generate the ID. Adds a lot more options. Defaults to 1.
+- **separator** (String) What to use between words in the ID. Defaults to '-'.
+- **capitalize** (Boolean) Whether to capitalize the first letter of each word or to leave everything lowercase. Defaults to false (lowercase).
+
+### Read-Only
+
+- **id** (String) The generated id presented in string format.
+- **result** (String) The generated id presented in string format.
+
+## Import
+
+Import is supported using the following syntax:
+
+```shell
+# Random UUID's can be imported. This can be used to replace a config
+# value with a value interpolated from the random provider without
+# experiencing diffs.
+
+terraform import humid.main cloudy-stylish-barb
+```
