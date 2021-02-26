@@ -1,4 +1,6 @@
 # Humid Terraform Provider
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkscarlett%2Fterraform-provider-humid.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkscarlett%2Fterraform-provider-humid?ref=badge_shield)
+
 
 ## What is humid?
 
@@ -17,3 +19,5 @@ This is my first journey into creating my own Terraform provider and there isn't
 ## License
 
 This provider was created by [Kellen Scarlett](https://github.com/kscarlett) and released under the [MIT License](LICENSE).
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkscarlett%2Fterraform-provider-humid.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkscarlett%2Fterraform-provider-humid?ref=badge_large)
